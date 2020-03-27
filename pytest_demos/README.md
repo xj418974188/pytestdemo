@@ -5,13 +5,21 @@
  - pytest介绍
    
    pytest是一个非常成熟的全功能的Python测试框架 
+   
 简单灵活，容易上手;
+
 支持参数化; 
+
 测试用例的skip和xfail，自动失败重试等处理; 
+
 能够支持简单的单元测试和复杂的功能测试，还可以用来做selenium/appnium等自动化测试、接口自动化测试(pytest+requests); 
+
 pytest具有很多第三方插件，并且可以自定义扩展， 比较好用的如 pytest-allure(完美html测试报告生成) ，pytest-xdist(多CPU分发) 等; 
+
 可以很好的和jenkins集成;
+
 文档 :https://docs.pytest.org/en/latest/contents.html#toc 
+
 第三方库:https://pypi.org/search/?q=pytest
 
  - pytest依赖包
