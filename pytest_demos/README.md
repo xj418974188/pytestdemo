@@ -6,21 +6,21 @@
    
    pytest是一个非常成熟的全功能的Python测试框架 
    
-简单灵活，容易上手;
+   简单灵活，容易上手;
 
-支持参数化; 
+   支持参数化; 
 
-测试用例的skip和xfail，自动失败重试等处理; 
+   测试用例的skip和xfail，自动失败重试等处理; 
 
-能够支持简单的单元测试和复杂的功能测试，还可以用来做selenium/appnium等自动化测试、接口自动化测试(pytest+requests); 
+   能够支持简单的单元测试和复杂的功能测试，还可以用来做selenium/appnium等自动化测试、接口自动化测试(pytest+requests); 
 
-pytest具有很多第三方插件，并且可以自定义扩展， 比较好用的如 pytest-allure(完美html测试报告生成) ，pytest-xdist(多CPU分发) 等; 
+   pytest具有很多第三方插件，并且可以自定义扩展， 比较好用的如 pytest-allure(完美html测试报告生成) ，pytest-xdist(多CPU分发) 等; 
 
-可以很好的和jenkins集成;
+   可以很好的和jenkins集成;
 
-文档 :https://docs.pytest.org/en/latest/contents.html#toc 
+   文档 :https://docs.pytest.org/en/latest/contents.html#toc 
 
-第三方库:https://pypi.org/search/?q=pytest
+   第三方库:https://pypi.org/search/?q=pytest
 
  - pytest依赖包
   ```$xslt
@@ -59,7 +59,11 @@ pytest  —maxfail=[num]          当运行错误达到num的时候就停止 运
  - pytest 框架结构
  ```import pytest 类似的setup,teardown同样更灵活， 
 模块级(setup_module/teardown_module)模块始末，全局的（优先最高） 
+
 函数级(setup_function/teardown_function)只对函数用例生效(不在类中)
+
 类级(setup_class/teardown_class)只在类中前后运行一次（在类中） 
+
 方法级(setup_method/teardown_methond)开始于方法始末（在类中）
+
 类里面的（setup/teardown）运行在调用方法的前后```
