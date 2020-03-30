@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import pytest
-@pytest.fixture(params=['第一条',2,'tome','第四条','第五条'])
+@pytest.fixture(params=['tom','jerry','eric'])
 def open(request):
     print(request.param)
     print("打开浏览器")

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import pytest
 class TestClass():
-    # @pytest.mark.aaa
+    @pytest.mark.aaa
     def test_one(self):
         print("test_one method")
         x = 'this'
@@ -18,6 +18,7 @@ class TestClass():
 
 
 if __name__ == '__main__':
-    pytest.main(['-v','test_pytest.py::TestClass::test_one'])
+    pytest.main(['-m','aaa'])
+    # pytest.main(['-v','test_pytest.py::TestClass::test_one'])
 # if __name__ == '__main__':
 #     pytest.main(['-v','test_pytest.py::TestClass::test_one'])
